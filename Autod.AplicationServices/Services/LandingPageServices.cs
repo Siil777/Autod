@@ -1,7 +1,7 @@
-﻿using Autod.core.Domain;
-using Autod.core.Dto;
-using Autod.core.ServiceInterface;
-using Autod.data;
+﻿using Autod.Core.Domain;
+using Autod.Core.Dto;
+using Autod.Core.ServiceInterface;
+using Autod.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Autod.AplicationServices.Services
 {
-    public class LandingPageServices: ILandingPageServices
+    public class LandingPageServices : ILandingPageServices
     {
         private readonly AutoContext _autoContext;
 
@@ -18,12 +18,12 @@ namespace Autod.AplicationServices.Services
         public LandingPageServices
             (
             AutoContext autoContext
-            ) 
-        { 
+            )
+        {
             _autoContext = autoContext;
         }
         //Async method takes parameter of type LandingPage named dto
-        public async Task<LandingPage> SaveCustomerdata(LandingPageDto dto)
+        public async Task<LandingPage> SaveCustomerdata(LandinPageDto dto)
         {
             //instance of the landingPage
             LandingPage landingPage = new LandingPage();
@@ -35,7 +35,7 @@ namespace Autod.AplicationServices.Services
             landingPage.Email = dto.Email;
 
             //instance added to LandingPages DbSet
-            await _autoContext.LandingPages.AddAsync( landingPage );
+            await _autoContext.LandingPages.AddAsync(landingPage);
             await _autoContext.SaveChangesAsync();
 
             return landingPage;

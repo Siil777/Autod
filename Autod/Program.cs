@@ -1,6 +1,6 @@
 using Autod.AplicationServices.Services;
-using Autod.core.ServiceInterface;
-using Autod.data;
+using Autod.Core.ServiceInterface;
+using Autod.Data;
 using Microsoft.EntityFrameworkCore;
 
 

@@ -1,6 +1,7 @@
-﻿using Autod.core.Dto;
-using Autod.core.ServiceInterface;
-using Autod.data;
+﻿
+using Autod.Core.Dto;
+using Autod.Core.ServiceInterface;
+using Autod.Data;
 using Autod.Models.LandingPage;
 using Microsoft.AspNetCore.Mvc;
 
@@ -50,7 +51,7 @@ namespace Autod.Controllers
         [HttpPost]
         public async Task <IActionResult> SaveCustomerdata(LandingPageViewModel vm) 
         {
-            var dto = new LandingPageDto
+            var dto = new LandinPageDto
             {
                 Id = vm.Id,
                 FirstName = vm.FirstName,

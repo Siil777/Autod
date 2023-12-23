@@ -787,43 +787,48 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Autod.core": "1.0.0",
-          "Autod.data": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25"
-        },
-        "compile": {
-          "bin/placeholder/Autod.AplicationServices.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Autod.AplicationServices.dll": {}
-        }
-      },
-      "Autod.core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25"
-        },
-        "compile": {
-          "bin/placeholder/Autod.core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Autod.core.dll": {}
-        }
-      },
-      "Autod.data/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Autod.core": "1.0.0",
+          "Autod.Core": "1.0.0",
+          "Autod.Data": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.25",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25",
+          "Microsoft.Extensions.DependencyInjection": "6.0.1"
         },
         "compile": {
-          "bin/placeholder/Autod.data.dll": {}
+          "bin/placeholder/Autod.AplicationServices.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Autod.data.dll": {}
+          "bin/placeholder/Autod.AplicationServices.dll": {}
+        }
+      },
+      "Autod.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.25",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25",
+          "Microsoft.Extensions.DependencyInjection": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Autod.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Autod.Core.dll": {}
+        }
+      },
+      "Autod.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Autod.Core": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.25",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25",
+          "Microsoft.Extensions.DependencyInjection": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Autod.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Autod.Data.dll": {}
         }
       }
     }
@@ -2052,21 +2057,21 @@
       "path": "../Autod.AplicationServices/Autod.AplicationServices.csproj",
       "msbuildProject": "../Autod.AplicationServices/Autod.AplicationServices.csproj"
     },
-    "Autod.core/1.0.0": {
+    "Autod.Core/1.0.0": {
       "type": "project",
-      "path": "../Autod.core/Autod.core.csproj",
-      "msbuildProject": "../Autod.core/Autod.core.csproj"
+      "path": "../Autod.Core/Autod.Core.csproj",
+      "msbuildProject": "../Autod.Core/Autod.Core.csproj"
     },
-    "Autod.data/1.0.0": {
+    "Autod.Data/1.0.0": {
       "type": "project",
-      "path": "../Autod.data/Autod.data.csproj",
-      "msbuildProject": "../Autod.data/Autod.data.csproj"
+      "path": "../Autod.Data/Autod.Data.csproj",
+      "msbuildProject": "../Autod.Data/Autod.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Autod.AplicationServices >= 1.0.0",
-      "Autod.data >= 1.0.0",
+      "Autod.Data >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.25",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.25",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.25",

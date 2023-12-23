@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dpq1UxYetwRVkvSzWhSYZuSO9rmS/+fbkRn3wjb5ujOSpLPXdCDUNtNg5tCUJz6ovVR3AYmlbD/cXy2uJ6tRYg==",
+  "dgSpecHash": "tHQLBtbFXkl/8emur8+YtnsUcWucTUpwtlPG9203OgTBsPULIDxHpiExMP1GSCSgTW+3U4A6NBvg2ryYfKSrVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.core\\Autod.core.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.Core\\Autod.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

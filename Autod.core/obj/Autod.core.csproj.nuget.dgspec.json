@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.core\\Autod.core.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.Core\\Autod.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.core\\Autod.core.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.Core\\Autod.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.core\\Autod.core.csproj",
-        "projectName": "Autod.core",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.core\\Autod.core.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.Core\\Autod.Core.csproj",
+        "projectName": "Autod.Core",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.Core\\Autod.Core.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.core\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,16 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.25, )"
@@ -54,6 +64,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.25, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             }
           },
           "imports": [

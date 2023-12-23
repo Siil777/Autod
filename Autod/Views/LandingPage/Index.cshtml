@@ -13,7 +13,6 @@
                 <th scope="col">Firstname</th>
                 <th scope="col">Lastname</th>
                 <th scope="col">Email</th>
-                <th scope="col">Engin Power</th>
                 <th></th>
             </tr>
         </thead>
@@ -27,9 +26,9 @@
                     <td>@customer.Email</td>
                     <td>
                         
-                            <a asp-action="details" asp-controller="LandingPage" asp-route-id="@customer.Id" style="background-color:#e9d362; color:brown; margin-right: 8px;" class="btn btn-info">Details</a>
+                        <a asp-action="details" asp-controller="LandingPage" asp-route-id="@customer.Id" style="background-color:#e9d362; color:brown; margin-right: 8px;" class="btn btn-info">Details</a>
                         <a asp-action="update" asp-controller="LandingPage" asp-route-id="@customer.Id" style="background-color:transparent; border: solid 1px; margin-right: 10px;" class="btn btn-primary">Update</a>
-                        <a asp-action="delete" asp-controller="LandingPage" asp-route-id="@customer.Id" style="background-color:transparent; border: solid 1px; margin-top: 10px;" class="btn btn-danger">Delete</a>
+ @*                        <a asp-action="delete" asp-controller="LandingPage" asp-route-id="@customer.Id" style="background-color:transparent; border: solid 1px; margin-top: 8px;" class="btn btn-danger">Delete</a> *@
                        
 
                     </td>
@@ -44,6 +43,9 @@
                 <td></td>
             </tr>
         </tbody>
+        <div class="btn-for-create-space-ship-page-table">
+            <a asp-action="SaveCustomerdata" asp-controller="LandingPage" style="background-color:#999966; margin-bottom: 10px;" class="btn btn-primary">Create</a>
+        </div>
     </table>
 
 </form>

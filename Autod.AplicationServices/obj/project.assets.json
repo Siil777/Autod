@@ -783,32 +783,35 @@
           }
         }
       },
-      "Autod.core/1.0.0": {
+      "Autod.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25"
+          "Microsoft.EntityFrameworkCore": "6.0.25",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25",
+          "Microsoft.Extensions.DependencyInjection": "6.0.1"
         },
         "compile": {
-          "bin/placeholder/Autod.core.dll": {}
+          "bin/placeholder/Autod.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Autod.core.dll": {}
+          "bin/placeholder/Autod.Core.dll": {}
         }
       },
-      "Autod.data/1.0.0": {
+      "Autod.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Autod.core": "1.0.0",
+          "Autod.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.25",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25",
+          "Microsoft.Extensions.DependencyInjection": "6.0.1"
         },
         "compile": {
-          "bin/placeholder/Autod.data.dll": {}
+          "bin/placeholder/Autod.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Autod.data.dll": {}
+          "bin/placeholder/Autod.Data.dll": {}
         }
       }
     }
@@ -2032,23 +2035,26 @@
         "version.txt"
       ]
     },
-    "Autod.core/1.0.0": {
+    "Autod.Core/1.0.0": {
       "type": "project",
-      "path": "../Autod.core/Autod.core.csproj",
-      "msbuildProject": "../Autod.core/Autod.core.csproj"
+      "path": "../Autod.Core/Autod.Core.csproj",
+      "msbuildProject": "../Autod.Core/Autod.Core.csproj"
     },
-    "Autod.data/1.0.0": {
+    "Autod.Data/1.0.0": {
       "type": "project",
-      "path": "../Autod.data/Autod.data.csproj",
-      "msbuildProject": "../Autod.data/Autod.data.csproj"
+      "path": "../Autod.Data/Autod.Data.csproj",
+      "msbuildProject": "../Autod.Data/Autod.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Autod.core >= 1.0.0",
-      "Autod.data >= 1.0.0",
+      "Autod.Core >= 1.0.0",
+      "Autod.Data >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 6.0.25",
+      "Microsoft.EntityFrameworkCore.Design >= 6.0.25",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.25",
-      "Microsoft.EntityFrameworkCore.Tools >= 6.0.25"
+      "Microsoft.EntityFrameworkCore.Tools >= 6.0.25",
+      "Microsoft.Extensions.DependencyInjection >= 6.0.1"
     ]
   },
   "packageFolders": {
@@ -2084,11 +2090,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.core\\Autod.core.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.core\\Autod.core.csproj"
+            "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.Core\\Autod.Core.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.Core\\Autod.Core.csproj"
             },
-            "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.data\\Autod.data.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.data\\Autod.data.csproj"
+            "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.Data\\Autod.Data.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.Data\\Autod.Data.csproj"
             }
           }
         }
@@ -2103,6 +2109,16 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.25, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.0.25, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[6.0.25, )"
@@ -2112,6 +2128,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.25, )"
+          },
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[6.0.1, )"
           }
         },
         "imports": [

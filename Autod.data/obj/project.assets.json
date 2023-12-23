@@ -783,17 +783,19 @@
           }
         }
       },
-      "Autod.core/1.0.0": {
+      "Autod.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25"
+          "Microsoft.EntityFrameworkCore": "6.0.25",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.25",
+          "Microsoft.Extensions.DependencyInjection": "6.0.1"
         },
         "compile": {
-          "bin/placeholder/Autod.core.dll": {}
+          "bin/placeholder/Autod.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Autod.core.dll": {}
+          "bin/placeholder/Autod.Core.dll": {}
         }
       }
     }
@@ -2017,19 +2019,20 @@
         "version.txt"
       ]
     },
-    "Autod.core/1.0.0": {
+    "Autod.Core/1.0.0": {
       "type": "project",
-      "path": "../Autod.core/Autod.core.csproj",
-      "msbuildProject": "../Autod.core/Autod.core.csproj"
+      "path": "../Autod.Core/Autod.Core.csproj",
+      "msbuildProject": "../Autod.Core/Autod.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Autod.core >= 1.0.0",
+      "Autod.Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.25",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.25",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.25",
-      "Microsoft.EntityFrameworkCore.Tools >= 6.0.25"
+      "Microsoft.EntityFrameworkCore.Tools >= 6.0.25",
+      "Microsoft.Extensions.DependencyInjection >= 6.0.1"
     ]
   },
   "packageFolders": {
@@ -2039,11 +2042,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.data\\Autod.data.csproj",
-      "projectName": "Autod.data",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.data\\Autod.data.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.Data\\Autod.Data.csproj",
+      "projectName": "Autod.Data",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.Data\\Autod.Data.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.data\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2065,8 +2068,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.core\\Autod.core.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.core\\Autod.core.csproj"
+            "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.Core\\Autod.Core.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod.Core\\Autod.Core.csproj"
             }
           }
         }
@@ -2100,6 +2103,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.25, )"
+          },
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[6.0.1, )"
           }
         },
         "imports": [

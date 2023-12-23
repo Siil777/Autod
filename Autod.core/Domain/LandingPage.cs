@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Autod.core.Domain
+namespace Autod.Core.Domain
 {
     public class LandingPage
     {
@@ -15,5 +15,6 @@ namespace Autod.core.Domain
         public string LastName { get; set; }
 
         public string Email { get; set; }
+
     }
 }
