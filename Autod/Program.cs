@@ -1,7 +1,28 @@
+using Autod.AplicationServices.Services;
+using Autod.core.ServiceInterface;
+using Autod.data;
+using Microsoft.EntityFrameworkCore;
+
+
+
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+
+builder.Services.AddDbContext<AutoContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
+//AddScoped method, a new instance of LandingPageServices will be
+//created for each scope (HTTP request in the web application)
+builder.Services.AddScoped<ILandingPageServices, LandingPageServices>();
+
+
+
 
 var app = builder.Build();
 
@@ -9,7 +30,7 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+
     app.UseHsts();
 }
 
@@ -25,3 +46,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+

@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Autod.Models.LandingPage.LandingPageViewModel>
+
+@{
+    int rowNumber = 1;
+}
+
+<form method="post"> 
+    <table class=" table table-hover">
+    
+        <thead>
+            <tr class="table-dark">
+                <th scope="col">Nr</th> 
+                <th scope="col">Firstname</th>
+                <th scope="col">Lastname</th>
+                <th scope="col">Email</th>
+                <th scope="col">Engin Power</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody> 
+            @foreach (var customer in Model)
+            {
+                <tr class="table-dark">
+                    <td>@rowNumber</td>
+                    <td>@customer.FirstName</td>
+                    <td>@customer.LastName</td>
+                    <td>@customer.Email</td>
+                    <td>
+                        
+                            <a asp-action="details" asp-controller="LandingPage" asp-route-id="@customer.Id" style="background-color:#e9d362; color:brown; margin-right: 8px;" class="btn btn-info">Details</a>
+                        <a asp-action="update" asp-controller="LandingPage" asp-route-id="@customer.Id" style="background-color:transparent; border: solid 1px; margin-right: 10px;" class="btn btn-primary">Update</a>
+                        <a asp-action="delete" asp-controller="LandingPage" asp-route-id="@customer.Id" style="background-color:transparent; border: solid 1px; margin-top: 10px;" class="btn btn-danger">Delete</a>
+                       
+
+                    </td>
+                </tr>
+                rowNumber += 1;
+            }
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+</form>
+

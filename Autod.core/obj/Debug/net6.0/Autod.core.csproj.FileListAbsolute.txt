@@ -1,0 +1,6 @@
+C:\Users\Admin\source\repos\Autod\Autod.core\obj\Debug\net6.0\Autod.core.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Autod\Autod.core\obj\Debug\net6.0\Autod.core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\Autod\Autod.core\obj\Debug\net6.0\Autod.core.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\Autod\Autod.core\obj\Debug\net6.0\Autod.core.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Autod\Autod.core\obj\Debug\net6.0\Autod.core.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Autod\Autod.core\obj\Debug\net6.0\Autod.core.sourcelink.json
