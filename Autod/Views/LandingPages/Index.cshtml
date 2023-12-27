@@ -26,8 +26,8 @@
                     <td>@customer.Email</td>
                     <td>
                         
-                        <a asp-action="details" asp-controller="LandingPage" asp-route-id="@customer.Id" style="background-color:#e9d362; color:brown; margin-right: 8px;" class="btn btn-info">Details</a>
-                        <a asp-action="update" asp-controller="LandingPage" asp-route-id="@customer.Id" style="background-color:transparent; border: solid 1px; margin-right: 10px;" class="btn btn-primary">Update</a>
+                        <a asp-action="details" asp-controller="LandingPages" asp-route-id="@customer.Id" style="background-color:#e9d362; color:brown; margin-right: 8px;" class="btn btn-info">Details</a>
+                        <a asp-action="update" asp-controller="LandingPages" asp-route-id="@customer.Id" style="background-color:transparent; border: solid 1px; margin-right: 10px;" class="btn btn-primary">Update</a>
  @*                        <a asp-action="delete" asp-controller="LandingPage" asp-route-id="@customer.Id" style="background-color:transparent; border: solid 1px; margin-top: 8px;" class="btn btn-danger">Delete</a> *@
                        
 
@@ -44,7 +44,7 @@
             </tr>
         </tbody>
         <div class="btn-for-create-space-ship-page-table">
-            <a asp-action="SaveCustomerdata" asp-controller="LandingPage" style="background-color:#999966; margin-bottom: 10px;" class="btn btn-primary">Create</a>
+            <a asp-action="SaveCustomerdata" asp-controller="LandingPages" style="background-color:#999966; margin-bottom: 10px;" class="btn btn-primary">Save</a>
         </div>
     </table>
 

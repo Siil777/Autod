@@ -3,9 +3,9 @@ C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\bin\Debug\net6.0\Auto
 C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\bin\Debug\net6.0\Autod.AplicationServices.dll
 C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\bin\Debug\net6.0\Autod.AplicationServices.pdb
 C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\bin\Debug\net6.0\Autod.Core.dll
-C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\bin\Debug\net6.0\Autod.data.dll
+C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\bin\Debug\net6.0\Autod.Data.dll
 C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\bin\Debug\net6.0\Autod.Core.pdb
-C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\bin\Debug\net6.0\Autod.data.pdb
+C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\bin\Debug\net6.0\Autod.Data.pdb
 C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\obj\Debug\net6.0\Autod.AplicationServices.csproj.AssemblyReference.cache
 C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\obj\Debug\net6.0\Autod.AplicationServices.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\obj\Debug\net6.0\Autod.AplicationServices.AssemblyInfoInputs.cache

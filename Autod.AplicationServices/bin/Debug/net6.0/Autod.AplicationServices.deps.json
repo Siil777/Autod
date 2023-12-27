@@ -511,7 +511,7 @@
           "Microsoft.Extensions.DependencyInjection": "6.0.1"
         },
         "runtime": {
-          "Autod.data.dll": {}
+          "Autod.Data.dll": {}
         }
       }
     }

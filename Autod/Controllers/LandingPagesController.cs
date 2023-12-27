@@ -7,14 +7,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Autod.Controllers
 {
-    public class LandingPageController : Controller
+    public class LandingPagesController : Controller
     {
 
         private readonly AutoContext _autoContext;
         private readonly ILandingPageServices _landingPageServices;
 
 
-        public LandingPageController
+        public LandingPagesController
             (
                 AutoContext autoContext,
                 ILandingPageServices landingPageServices
@@ -45,7 +45,7 @@ namespace Autod.Controllers
         {
             LandingPageViewModel viewModel = new LandingPageViewModel();
 
-            return View(viewModel);
+            return View("SaveCustomerdata", viewModel);
         }
 
         [HttpPost]

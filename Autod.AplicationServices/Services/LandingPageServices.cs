@@ -22,6 +22,7 @@ namespace Autod.AplicationServices.Services
         {
             _autoContext = autoContext;
         }
+
         //Async method takes parameter of type LandingPage named dto
         public async Task<LandingPage> SaveCustomerdata(LandinPageDto dto)
         {

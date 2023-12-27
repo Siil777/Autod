@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Autod.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod\\wwwroot\\css\\Car.css",
+      "PackagePath": "staticwebassets\\css\\Car.css"
+    },
+    {
       "Id": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
