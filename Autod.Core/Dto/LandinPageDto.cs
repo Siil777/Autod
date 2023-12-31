@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Autod.Core.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,10 @@ namespace Autod.Core.Dto
         public string LastName { get; set; }
 
         public string Email { get; set; }
+
+        public DateTime CreatedAt { get; set; }
+
+        public List<CarService> CarService { get; set; }
 
 
     }

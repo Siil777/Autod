@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\Car.css"
     },
     {
+      "Id": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod\\wwwroot\\css\\cssForpageAutoService.css",
+      "PackagePath": "staticwebassets\\css\\cssForpageAutoService.css"
+    },
+    {
       "Id": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

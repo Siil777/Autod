@@ -1,8 +1,9 @@
 ﻿@model Autod.Models.LandingPage.LandingPageViewModel
 
-
-<div>
-    <form style="color:white;" class="login-form" method="post" enctype="multipart/form-data">
+<link rel="stylesheet" href="~/css/cssForpageAutoService.css" asp-append-version="true" />
+<h2>Fill the form we could contanct</h2>
+    <div class="form-container">
+    <form style="color:black;" class="login-form" method="post" enctype="multipart/form-data">
         <input asp-for="Id" type="hidden" />
        
 
@@ -39,7 +40,7 @@
         { *@
 
 
-        <input asp-action="SaveCustomerdata" type="submit" asp-controller="LandingPages" style="width:20%; color: white; border: solid 1px;" class="btn btn-outline-primary" value="Save" />
+        <input asp-action="SaveCustomerdata" type="submit" asp-controller="LandingPages" style="width:20%; color: black; border: solid 1px;" class="btn btn-outline-primary" value="Save" />
 
 
  @*        } *@
@@ -49,6 +50,6 @@
 
 
 
-        <a asp-action="index" style="width:10%; color: white; border: solid 1px;" class="btn btn-outline-pimary">Index</a>
+        <a asp-action="index" style=" color: black; border: solid 1px;" class="btn btn-outline-pimary">Index</a>
     </form>
 </div>

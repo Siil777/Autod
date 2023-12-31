@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LNRGLuJnMfouKT6jSDteH1xdwUW3RXXBXY4+Ee88YvI=",
+  "Hash": "tz9txTlBBkelGAQDVrQJRezZW8w+Go/ri/Do1zSJqnI=",
   "Source": "Autod",
   "BasePath": "_content/Autod",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Car.css"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod\\wwwroot\\css\\cssForpageAutoService.css",
+      "SourceId": "Autod",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod\\wwwroot\\",
+      "BasePath": "_content/Autod",
+      "RelativePath": "css/cssForpageAutoService.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\cssForpageAutoService.css"
     },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod\\wwwroot\\css\\site.css",

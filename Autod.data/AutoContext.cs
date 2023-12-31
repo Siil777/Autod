@@ -18,5 +18,16 @@ namespace Autod.Data
 
 
         public DbSet<LandingPage> LandingPages { get; set; }
+        public DbSet<CarService> CarServices { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<CarService>()
+                .HasOne(cs => cs.Customer)
+                .WithMany(c => c.CarService)
+                .HasForeignKey(cs => cs.CustomerId);
+
+            
+        }
     }
 }

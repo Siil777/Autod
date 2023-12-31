@@ -16,5 +16,9 @@ namespace Autod.Core.Domain
 
         public string Email { get; set; }
 
+        public DateTime CreatedAt { get; set; }
+
+        public List<CarService> CarService { get; set; }
+
     }
 }
