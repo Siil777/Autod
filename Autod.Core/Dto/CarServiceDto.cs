@@ -13,7 +13,7 @@ namespace Autod.Core.Dto
         public string TypeOfService { get; set; }
         public Guid? CustomerId { get; set; }
         public DateTime CreatedAt { get; set; }
-
         public virtual LandinPageDto Customer { get; set; }
     }
+
 }

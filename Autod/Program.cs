@@ -1,4 +1,5 @@
 using Autod.AplicationServices.Services;
+using Autod.Core.Domain;
 using Autod.Core.ServiceInterface;
 using Autod.Data;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ builder.Services.AddDbContext<AutoContext>(options =>
 //AddScoped method, a new instance of LandingPageServices will be
 //created for each scope (HTTP request in the web application)
 builder.Services.AddScoped<ILandingPageServices, LandingPageServices>();
+builder.Services.AddScoped<ICarService, CarServiceServices>();
 
 
 
@@ -32,7 +34,10 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
 
     app.UseHsts();
+
+    app.UseSession();
 }
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

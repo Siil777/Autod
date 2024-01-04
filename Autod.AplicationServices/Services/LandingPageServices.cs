@@ -34,6 +34,7 @@ namespace Autod.AplicationServices.Services
             landingPage.FirstName = dto.FirstName;
             landingPage.LastName = dto.LastName;
             landingPage.Email = dto.Email;
+            landingPage.CreatedAt= DateTime.Now;
 
             //instance added to LandingPages DbSet
             await _autoContext.LandingPages.AddAsync(landingPage);

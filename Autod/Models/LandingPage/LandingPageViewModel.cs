@@ -11,10 +11,10 @@
         public string Email { get; set; }
 
 
-        public DateTime CreatedAt { get; set; } 
+        public DateTime CreatedAt { get; set; }
 
-        
-        public virtual CarService CarService { get; set; }
+
+        public virtual ICollection<CarServiceViewModel> CarServices { get; set; }
 
 
 

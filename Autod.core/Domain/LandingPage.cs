@@ -18,7 +18,7 @@ namespace Autod.Core.Domain
 
         public DateTime CreatedAt { get; set; }
 
-        public List<CarService> CarService { get; set; }
+        public List<CarService> CarServices { get; set; }
 
     }
 }

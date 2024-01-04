@@ -24,10 +24,9 @@ namespace Autod.Data
         {
             modelBuilder.Entity<CarService>()
                 .HasOne(cs => cs.Customer)
-                .WithMany(c => c.CarService)
+                .WithMany(c => c.CarServices) 
                 .HasForeignKey(cs => cs.CustomerId);
-
-            
         }
+
     }
 }
