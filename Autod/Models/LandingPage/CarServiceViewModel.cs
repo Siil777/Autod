@@ -18,7 +18,7 @@ namespace Autod.Models.LandingPage
     };
         public Guid Id { get; set; }
         public string CarMake { get; set; }
-       
+
         public Guid? CustomerId { get; set; }
         public DateTime CreatedAt { get; set; } // Added CreatedAt property
 

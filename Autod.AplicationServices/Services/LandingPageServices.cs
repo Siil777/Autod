@@ -13,35 +13,39 @@ namespace Autod.AplicationServices.Services
     public class LandingPageServices : ILandingPageServices
     {
         private readonly AutoContext _autoContext;
+        private readonly ICarService _carService;
 
-
-        public LandingPageServices
-            (
-            AutoContext autoContext
-            )
+        public LandingPageServices(AutoContext autoContext, ICarService carService)
         {
             _autoContext = autoContext;
+            _carService = carService;
         }
 
-        //Async method takes parameter of type LandingPage named dto
         public async Task<LandingPage> SaveCustomerdata(LandinPageDto dto)
         {
-            //instance of the landingPage
             LandingPage landingPage = new LandingPage();
 
-            //instance is populated with values from dto
             landingPage.Id = Guid.NewGuid();
             landingPage.FirstName = dto.FirstName;
             landingPage.LastName = dto.LastName;
             landingPage.Email = dto.Email;
-            landingPage.CreatedAt= DateTime.Now;
+            landingPage.CreatedAt = DateTime.Now;
 
-            //instance added to LandingPages DbSet
             await _autoContext.LandingPages.AddAsync(landingPage);
             await _autoContext.SaveChangesAsync();
 
-            return landingPage;
+            // Automatically create a corresponding CarService record
+            var carServiceDto = new CarServiceDto
+            {
+                CarMake = "DefaultCarMake", 
+                TypeOfService = "DefaultTypeOfService",
+                CustomerId = landingPage.Id
+            };
 
+            await _carService.SaveCustomerRequest(carServiceDto);
+
+            return landingPage;
         }
     }
 }
+

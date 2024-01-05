@@ -9,26 +9,17 @@ namespace Autod.Controllers
 {
     public class LandingPagesController : Controller
     {
-
         private readonly AutoContext _autoContext;
         private readonly ILandingPageServices _landingPageServices;
         private readonly ICarService _carService;
 
-
-        public LandingPagesController
-            (
-                AutoContext autoContext,
-                ILandingPageServices landingPageServices
-,
-                ICarService carServiceServices
-            )
+        public LandingPagesController(AutoContext autoContext, ILandingPageServices landingPageServices, ICarService carService)
         {
             _autoContext = autoContext;
             _landingPageServices = landingPageServices;
-            _carService = carServiceServices;
+            _carService = carService;
         }
-        //Landing page initial form
-        // based on space shop
+
         public IActionResult Index()
         {
             var result = _autoContext.LandingPages
@@ -40,12 +31,11 @@ namespace Autod.Controllers
                     Email = x.Email,
                 });
 
-
             return View(result);
         }
 
         [HttpGet]
-        public IActionResult SaveCustomerdata() 
+        public IActionResult SaveCustomerdata()
         {
             LandingPageViewModel viewModel = new LandingPageViewModel();
 
@@ -53,17 +43,14 @@ namespace Autod.Controllers
         }
 
         [HttpPost]
-        public async Task <IActionResult> SaveCustomerdata(LandingPageViewModel vm) 
+        public async Task<IActionResult> SaveCustomerdata(LandingPageViewModel vm)
         {
             var dto = new LandinPageDto
             {
-                Id = vm.Id,
                 FirstName = vm.FirstName,
                 LastName = vm.LastName,
                 Email = vm.Email,
-                CreatedAt= DateTime.Now,
-
-
+                CreatedAt = DateTime.Now,
             };
 
             var result = await _landingPageServices.SaveCustomerdata(dto);
@@ -73,45 +60,52 @@ namespace Autod.Controllers
                 return RedirectToAction(nameof(SaveCustomerRequest));
             }
 
-            return RedirectToAction(nameof(SaveCustomerRequest), vm);
-
+            // Redirect 
+            return RedirectToAction(nameof(SaveCustomerRequest));
         }
-        //Page where a customer leave precise data about car and service he needs
+
         [HttpGet]
         public IActionResult SaveCustomerRequest()
         {
-            CarServiceViewModel carServiceView= new CarServiceViewModel();
+            CarServiceViewModel carServiceView = new CarServiceViewModel();
 
             return View("SaveCustomerRequest", carServiceView);
         }
+
         [HttpPost]
         public async Task<IActionResult> SaveCustomerRequest(CarServiceViewModel vm)
         {
+            // Create 
             var dto = new CarServiceDto
             {
-                Id = vm.Id,
                 CarMake = vm.CarMake,
-                TypeOfService=vm.TypeOfService,
-                CustomerId = vm.CustomerId,
-                CreatedAt=DateTime.Now,
-
-
-               
-
-
+                TypeOfService = vm.TypeOfService,
+                CreatedAt = DateTime.Now,
             };
-            var result = await _carService.SaveCustomerRequest(dto);
 
-            if (result==null)
+            // Retrieve the LandingPage entity from the database based on the provided CustomerId
+            var landingPage = await _autoContext.LandingPages.FindAsync(vm.CustomerId);
+
+            if (landingPage == null)
             {
+                // Handle the case where the LandingPage with the provided CustomerId is not found
                 return RedirectToAction(nameof(SaveCustomerRequest));
-
             }
 
-            return RedirectToAction(nameof(SaveCustomerRequest), vm);
+            // Set the CustomerId in CarServiceDto to the Id of the LandingPage
+            dto.CustomerId = landingPage.Id;
 
+            var result = await _carService.SaveCustomerRequest(dto);
 
+            if (result == null)
+            {
+                return RedirectToAction(nameof(SaveCustomerRequest));
+            }
 
+            // Redirect 
+            return RedirectToAction(nameof(SaveCustomerRequest));
         }
+
     }
 }
+

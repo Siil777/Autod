@@ -14,30 +14,26 @@ namespace Autod.AplicationServices.Services
     {
         private readonly AutoContext _autoContext;
 
-        public CarServiceServices
-            (
-                 AutoContext autoContext
-            )
+        public CarServiceServices(AutoContext autoContext)
         {
             _autoContext = autoContext;
         }
 
         public async Task<CarService> SaveCustomerRequest(CarServiceDto dto)
         {
-            CarService carService= new CarService();
+            CarService carService = new CarService();
 
             carService.Id = Guid.NewGuid();
             carService.CarMake = dto.CarMake;
-            carService.TypeOfService= dto.TypeOfService;
+            carService.TypeOfService = dto.TypeOfService;
             carService.CustomerId = dto.CustomerId;
-            carService.CreatedAt= DateTime.Now;
+            carService.CreatedAt = DateTime.Now;
 
-
-            await _autoContext.AddRangeAsync(carService);
+            await _autoContext.CarServices.AddAsync(carService);
             await _autoContext.SaveChangesAsync();
 
             return carService;
-
         }
     }
 }
+
