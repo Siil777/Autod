@@ -34,18 +34,10 @@ namespace Autod.AplicationServices.Services
             await _autoContext.LandingPages.AddAsync(landingPage);
             await _autoContext.SaveChangesAsync();
 
-            // Automatically create a corresponding CarService record
-            var carServiceDto = new CarServiceDto
-            {
-                CarMake = "DefaultCarMake", 
-                TypeOfService = "DefaultTypeOfService",
-                CustomerId = landingPage.Id
-            };
-
-            await _carService.SaveCustomerRequest(carServiceDto);
-
             return landingPage;
         }
+
+
     }
 }
 

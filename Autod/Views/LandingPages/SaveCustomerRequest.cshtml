@@ -2,7 +2,7 @@
 
 @using (Html.BeginForm("SaveCustomerRequest", "LandingPages", FormMethod.Post))
 {
-    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.CustomerId)
 
     <div class="form-group">
         @Html.LabelFor(model => model.CarMake)
@@ -16,5 +16,6 @@
 
     <button type="submit" class="btn btn-primary">Submit</button>
 }
+
 
 

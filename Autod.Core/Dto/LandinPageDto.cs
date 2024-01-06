@@ -21,7 +21,6 @@ namespace Autod.Core.Dto
         public DateTime CreatedAt { get; set; }
 
         public List<CarService> CarService { get; set; }
-
-
+     
     }
 }

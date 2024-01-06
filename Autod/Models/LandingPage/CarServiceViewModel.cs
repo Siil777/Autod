@@ -20,7 +20,11 @@ namespace Autod.Models.LandingPage
         public string CarMake { get; set; }
 
         public Guid? CustomerId { get; set; }
-        public DateTime CreatedAt { get; set; } // Added CreatedAt property
+        public DateTime CreatedAt { get; set; }
+
+        public string SelectedTypeOfService { get; set; }
+
+        // List of available service types for the dropdown
 
         // Navigation property for the related Customer
         public virtual LandingPageViewModel Customer { get; set; }

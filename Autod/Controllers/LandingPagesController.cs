@@ -60,22 +60,25 @@ namespace Autod.Controllers
                 return RedirectToAction(nameof(SaveCustomerRequest));
             }
 
-            // Redirect 
-            return RedirectToAction(nameof(SaveCustomerRequest));
+            
+            return RedirectToAction(nameof(SaveCustomerRequest), new { id = result.Id });
         }
 
+
         [HttpGet]
-        public IActionResult SaveCustomerRequest()
+        public IActionResult SaveCustomerRequest(Guid id)
         {
-            CarServiceViewModel carServiceView = new CarServiceViewModel();
+            
+            CarServiceViewModel carServiceView = new CarServiceViewModel { CustomerId = id };
 
             return View("SaveCustomerRequest", carServiceView);
         }
 
+
         [HttpPost]
         public async Task<IActionResult> SaveCustomerRequest(CarServiceViewModel vm)
         {
-            // Create 
+            // Create a new CarServiceDto
             var dto = new CarServiceDto
             {
                 CarMake = vm.CarMake,
@@ -102,10 +105,10 @@ namespace Autod.Controllers
                 return RedirectToAction(nameof(SaveCustomerRequest));
             }
 
-            // Redirect 
+            // Redirect to the SaveCustomerRequest action in this controller
             return RedirectToAction(nameof(SaveCustomerRequest));
         }
 
-    }
+            }
 }
 

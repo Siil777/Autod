@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Autod.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0947db0de3e86f22bad64f23a05a3ee76030526a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0798bf85c86b0ad1dca11e95676cad644f86b64")]
 [assembly: System.Reflection.AssemblyProductAttribute("Autod.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Autod.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
