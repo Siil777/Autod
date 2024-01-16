@@ -1,0 +1,215 @@
+﻿#.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.affix + .container-fluid {
+    padding-top: 70px;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.border {
+    border-radius: 12px;
+    border: 5px solid rgb(26, 26, 26);
+}
+
+.glyphicon {
+    color: rgb(218, 25, 33);
+}
+
+#me {
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    background-color: rgb(218, 25, 33);
+    border: 1px solid rgb(218, 25, 33);
+    border-radius: 7px;
+    color: white;
+    padding: 10px 15px;
+}
+
+
+
+#first-row {
+    /* margin-bottom: 30px; */
+    padding-bottom: 10px;
+}
+
+#slideshow1 {
+    border-radius: 12px;
+    border: 5px solid rgb(26, 26, 26);
+    margin-bottom: 20px;
+}
+
+    #slideshow1 .item {
+        height: 500px;
+    }
+
+    #slideshow1 img {
+        min-width: 100%;
+        min-height: 100%;
+        border-radius: 7px;
+    }
+
+    #slideshow1 .carousel-control {
+        border-radius: 7px;
+    }
+
+    #slideshow1 .carousel-indicators li {
+        background-color: rgb(218, 25, 33);
+        border: 1px solid rgb(218, 25, 33);
+    }
+
+    #slideshow1 .carousel-indicators > .active {
+        background-color: white;
+        border: 1px solid white;
+    }
+
+#login .panel {
+    border-radius: 12px;
+    border: 5px solid rgb(26, 26, 26);
+}
+
+#login .panel-heading {
+    background-color: rgb(26, 26, 26);
+    color: #eee;
+}
+
+#login #email-warning {
+    text-align: center;
+    color: red;
+    font-style: italic;
+    visibility: hidden;
+}
+
+#ring-advertise {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+    #ring-advertise .btn {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    #ring-advertise img {
+        width: 100%;
+    }
+
+#slideshow2 {
+    background-image: url("http://uupload.ir/files/3cpr_hbg.jpg");
+    padding: 0;
+    border-radius: 12px;
+    border: 30px solid rgb(26, 26, 26);
+}
+
+    #slideshow2 img {
+        min-width: 100%;
+        height: 220px;
+        border-radius: 0;
+    }
+
+    #slideshow2 .col-sm-4 {
+        padding:0;
+        
+    }
+
+    #slideshow2 .carousel-control {
+        padding-top: 10%;
+        width: 5%;
+    }
+
+    #slideshow2 .carousel-indicators {
+        bottom: -35px;
+    }
+
+        #slideshow2 .carousel-indicators li {
+            background-color: rgb(218, 25, 33);
+            border: 1px solid rgb(218, 25, 33);
+        }
+
+        #slideshow2 .carousel-indicators > .active {
+            background-color: white;
+            border: 1px solid white;
+        }
+
+#gallery .col-sm-8 img {
+    height: 180px;
+    width: 100%;
+    display: block;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#gallery .col-sm-8 .btn {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#gallery p {
+    text-align: justify;
+}
+
+#gallery .panel {
+    border-radius: 12px;
+    border: 5px solid rgb(26, 26, 26);
+}
+
+#gallery .panel-heading {
+    background-color: rgb(26, 26, 26);
+    color: #eee;
+}
+
+#gallery .col-sm-4 .panel-heading {
+    border-bottom: 1px solid rgb(26, 26, 26);
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+#gallery .col-sm-4 .panel-body {
+    background-color: rgb(26, 26, 26);
+    color: #ddd;
+    padding: 0;
+    
+}
+
+#gallery .col-sm-4 .btn {
+    border-radius: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+
+#gallery .col-sm-8 .row {
+    margin: 22px 0;
+}
+
+#gallery .col-sm-4 .row {
+    margin: 5px 0;
+}
+
+#gallery hr {
+    border-top: 1px solid #888;
+}
+
+#gallery .col-sm-4 img {
+    height: 100px;
+    width: 90%;
+    display: block;
+    border-radius: 0;
+}
+
+
+
+

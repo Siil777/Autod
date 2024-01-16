@@ -1,0 +1,50 @@
+﻿@model Autod.Models.CarService.CarServiceCreateUpdateViewModel
+
+
+<div class="neon">
+    <div class="green">Update</div>
+
+</div>
+<div>
+    <form class="login-form" method="post" enctype="multipart/form-data">
+        <input asp-for="Id" type="hidden" />
+        <input asp-for="CreatedAt" type="hidden" />
+
+
+        <div class="form-input-material">
+            <label asp-for="CarMake" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="CarMake" class="form-control" />
+
+            </div>
+        </div>
+
+        <div class="form-input-material">
+            <label asp-for="SelectedTypeOfService" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="SelectedTypeOfService" class="form-control" />
+
+            </div>
+        </div>
+
+        <div class="form-input-material">
+            <label asp-for="CustomerId" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="CustomerId" class="form-control" />
+
+            </div>
+        </div>
+        <hr />
+        @if (Model.Id != Guid.Empty)
+        {
+            <input asp-action="UpdateServicePage" style="width:10%;" asp-controller="CarServices" type="submit" class="btn btn-outline-primary" value="Update" />
+        }
+        else
+        {
+            <input asp-action="CreateTypeOfService" style="width:10%;" asp-controller="CarServices" type="submit" class=" btn btn-outline-info" value="Create" />
+        }
+
+        <a asp-action="index" style="width:10%;" class="btn btn-outline-primary">Back</a>
+    </form>
+</div>
+

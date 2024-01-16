@@ -1,0 +1,78 @@
+﻿@model Autod.Models.LandingPage.CombainViewModel
+@* @model IEnumerable<Autod.Models.LandingPage.CombinedViewModel> *@
+@{
+    int rowNumber = 1;
+}
+
+<div class="btn-for-create-space-ship-page-table">
+    <a asp-action="CreatePrimary" asp-controller="LandingPages" style="background-color:#999966; margin-bottom: 10px;" class="btn btn-primary">Create</a>
+</div>
+
+<form method="post">
+    <table class="table table-hover">
+        <thead>
+            <tr class="table-dark">
+                <th scope="col">Nr</th>
+                <th scope="col">Firstname</th>
+                <th scope="col">Lastname</th>
+                <th colspan="5" scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var customer in Model.LandingPageData)
+            {
+                <tr class="table-dark">
+                    <td>@rowNumber</td>
+                    <td>@customer.FirstName</td>
+                    <td>@customer.LastName</td>
+                    <td>@customer.Email</td>
+                    <td>
+                        <a asp-action="DetailsPrimaryDataPage" asp-controller="LandingPages" asp-route-id="@customer.Id" style="background-color:#e9d362; color:brown;" class="btn btn-info">Details</a>
+                        <a asp-action="UpdatePrimaryData" asp-controller="LandingPages" asp-route-id="@customer.Id" style="background-color:#e9d362; border: solid 1px;" class="btn btn-Info">Update</a>
+                        <a asp-action="DeletePrimaryDataPage" asp-controller="LandingPages" asp-route-id="@customer.Id" style="background-color:transparent; border: solid 1px;" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+                rowNumber += 1;
+            }
+        </tbody>
+    </table>
+</form>
+<!-- for CarServiceViewModel -->
+<div class="btn-for-create-space-ship-page-table">
+    <a asp-action="CreateTypeOfService" asp-controller="CarServices" style="background-color:#999966; margin-bottom: 10px;" class="btn btn-primary">Create</a>
+</div>
+<form method="post">
+    <table class="table table-hover form-container">
+        <thead>
+            <tr class="table-dark">
+                <th scope="col">Nr</th>
+                <th scope="col">Car Make</th>
+                <th scope="col">Customer Id</th>
+                <th scope="col">Type of Service</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var carService in Model.CarServiceData)
+            {
+                <tr class="table-dark">
+                    <td>@rowNumber</td>
+                    <td>@carService.CarMake</td>
+                    <td>@carService.CustomerId</td>
+                    <td>@carService.SelectedTypeOfService</td>
+                    <td>
+                        <a asp-action="DetailsCarMakeTypeService" asp-controller="CarServices" asp-route-id="@carService.Id" style="background-color:#e9d362; color:brown;"  class="btn btn-info">Details</a>
+                        <a asp-action="UpdateServicePage" asp-controller="CarServices" asp-route-id="@carService.Id" style="background-color:transparent; border: solid 1px;" class="btn btn-danger">Update</a>
+                        <a asp-action="DeleteTypeServicePage" asp-controller="CarServices" asp-route-id="@carService.Id" style="background-color:transparent; border: solid 1px;" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+                rowNumber += 1;
+            }
+            <tr>
+       
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+

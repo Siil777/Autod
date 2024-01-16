@@ -1,0 +1,36 @@
+﻿@model Autod.Models.CarService.CarServiceDeleteViewModel
+
+<div>
+    <div class="neon">
+        <div class="red">Car Service</div>
+    </div>
+    <hr />
+    <div class="formHeight">
+        <div class="dark-transparent-background ">
+            <dl class="row">
+                <div class="form-group row">
+                    <label asp-for="Id" class="col-sm-2 col-form-label"></label>
+                    @Html.DisplayFor(model => Model.Id)
+                </div>
+                <div class="form-group row">
+                    <label asp-for="CarMake" class="col-sm-2 col-form-label"></label>
+                    @Html.DisplayFor(model => Model.CarMake)
+                </div>
+                <div class="form-group row">
+                    <label asp-for="CustomerId" class="col-sm-2 col-form-label"></label>
+                    @Html.DisplayFor(model => Model.CustomerId)
+                </div>
+                <div class="form-group row">
+                    <label asp-for="SelectedTypeOfService" class="col-sm-2 col-form-label"></label>
+                    @Html.DisplayFor(model => Model.SelectedTypeOfService)
+                </div>
+                <div class="form-group row">
+                    <label asp-for="CreatedAt" class="col-sm-2 col-form-label"></label>
+                    @Html.DisplayFor(model => Model.CreatedAt)
+                </div>
+            </dl>
+        </div>
+    </div>
+    <a asp-action="index" class="btn btn-outline-primary">Back</a>
+    <input type="submit" value="Delete" class="btn btn-danger" />
+</div>

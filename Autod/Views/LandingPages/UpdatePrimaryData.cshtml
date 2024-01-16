@@ -1,0 +1,50 @@
+﻿@model Autod.Models.LandingPage.LandingPagesCreateUpdateViewModel
+
+
+<div class="neon">
+    <div class="green">Update</div>
+
+</div>
+    <div>
+        <form class="login-form" method="post" enctype="multipart/form-data">
+            <input asp-for="Id" type="hidden" />
+            <input asp-for="CreatedAt" type="hidden" />
+
+
+            <div class="form-input-material">
+                <label asp-for="FirstName" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input asp-for="FirstName" class="form-control" />
+
+                </div>
+            </div>
+
+            <div class="form-input-material">
+                <label asp-for="LastName" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input asp-for="LastName" class="form-control" />
+
+                </div>
+            </div>
+
+            <div class="form-input-material">
+                <label asp-for="Email" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input asp-for="Email" class="form-control" />
+
+                </div>
+            </div>
+            <hr />
+        @if (Model.Id != Guid.Empty)
+        {
+            <input asp-action="UpdatePrimaryData" style="width:10%;" asp-controller="LandingPages" type="submit" class="btn btn-outline-primary" value="Update" />
+        }
+        else
+        {
+            <input asp-action="CreatePrimary" style="width:10%;" asp-controller="LandingPages" type="submit" class=" btn btn-outline-info" value="Create" />
+        }
+
+        <a asp-action="index" style="width:10%;" class="btn btn-outline-primary">Back</a>
+        </form>
+    </div>
+

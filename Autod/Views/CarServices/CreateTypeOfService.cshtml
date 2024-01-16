@@ -1,0 +1,35 @@
+﻿@model Autod.Models.CarService.CarServiceCreateUpdateViewModel
+
+<link rel="stylesheet" href="~/css/SlideShow.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/cssForpageAutoService.css" asp-append-version="true" />
+
+<div class="neon">
+    <div class="green">Create</div>
+
+</div>
+<form class="login-form" method="post" enctype="multipart/form-data">
+    <input asp-for="Id" type="hidden" />
+    <input asp-for="CreatedAt" type="hidden" />
+
+    <div class="form-input-material">
+        <label asp-for="CarMake" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input class="form-control-material" asp-for="CarMake" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-input-material">
+        <label asp-for="TypeOfService" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input class="form-control-material" asp-for="TypeOfService" class="form-control" />
+        </div>
+    </div>
+    <div class="form-input-material">
+        <label asp-for="CustomerId" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input class="form-control-material" asp-for="CustomerId" class="form-control" />
+        </div>
+    </div>
+    <input asp-action="CreateTypeOfService" type="submit" asp-controller="CarServices" style="width:20%; color: black; border: solid 1px;" class="btn btn-outline-primary mt-1" value="Create" />
+    <a asp-action="index" style=" color: black; border: solid 1px;" class="btn btn-outline-pimary mt-1">Index</a>
+</form>
