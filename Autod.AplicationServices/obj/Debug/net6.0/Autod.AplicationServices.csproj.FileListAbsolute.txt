@@ -144,3 +144,4 @@ C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\obj\Debug\net6.0\refi
 C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\obj\Debug\net6.0\Autod.AplicationServices.pdb
 C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\obj\Debug\net6.0\Autod.AplicationServices.genruntimeconfig.cache
 C:\Users\Admin\source\repos\Autod\Autod.AplicationServices\obj\Debug\net6.0\ref\Autod.AplicationServices.dll
+C:\Users\Admin\Source\Repos\Autod\Autod.AplicationServices\obj\Debug\net6.0\Autod.AplicationServices.sourcelink.json

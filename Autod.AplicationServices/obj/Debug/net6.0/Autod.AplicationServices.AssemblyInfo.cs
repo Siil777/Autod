@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Autod.AplicationServices")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2fd1edc3b1dfd5e8f4caef47da6f72fa2c92eda")]
 [assembly: System.Reflection.AssemblyProductAttribute("Autod.AplicationServices")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Autod.AplicationServices")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
