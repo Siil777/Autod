@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uIef9x8BFMYP1rktWuvz4ix8A2+xJqAj2mdTjbe/sNQ=",
+  "Hash": "JeQ3ms82rhhFWQN75PZTza9JoN4RMaGxliBlHiPAULw=",
   "Source": "Autod",
   "BasePath": "_content/Autod",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Autod.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod\\wwwroot\\css\\aboutUs.css",
+      "SourceId": "Autod",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod\\wwwroot\\",
+      "BasePath": "_content/Autod",
+      "RelativePath": "css/aboutUs.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\aboutUs.css"
     },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod\\wwwroot\\css\\Car.css",

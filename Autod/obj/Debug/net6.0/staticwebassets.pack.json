@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\StyleForInsriptionCarService.css"
     },
     {
+      "Id": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod\\wwwroot\\css\\aboutUs.css",
+      "PackagePath": "staticwebassets\\css\\aboutUs.css"
+    },
+    {
       "Id": "C:\\Users\\Admin\\source\\repos\\Autod\\Autod\\wwwroot\\css\\cssForpageAutoService.css",
       "PackagePath": "staticwebassets\\css\\cssForpageAutoService.css"
     },
